@@ -1,0 +1,11 @@
+log.txt
+*.py
+*.spec
+*.ini
+*.bat
+*.png
+build/
+img/
+__pycache__/*
+img/minimapTest.png
+img/DEBUG*
