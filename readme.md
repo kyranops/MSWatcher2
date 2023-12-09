@@ -30,7 +30,6 @@ MSWatcher2 monitors your screen constantly to alert your Discord. Some of the sc
 ![discord alert example](https://github.com/kyranops/MSWatcher2/blob/main/assets/alertexample.png?raw=true)
 
 Other scans that are currently in beta or planned for future development includes:
-- Scan for 
 - OCR text recognition to extract text from all chat or gm chat
 - Chat type differentiation to identify if it is party chat, buddy chat, guild chat etc
 - Current EXP percentage detection
