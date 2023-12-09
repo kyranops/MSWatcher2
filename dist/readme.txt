@@ -5,14 +5,38 @@
 
 ===========================Quick Setup Guide===========================
 1. [IMPORTANT] In config.ini check Core > Identifier and ensure that it is binded to you/your discord name
+2. [IMPORTANT] If you want to you autologin/auto2fa functions you must fill in your info. This is disabled by default, set toggle to "True" to turn on. See <Auto-Login Setup> below
+3. [IMPORTANT] If you want to use auto blink when stuck, you must fill in your blink key in config.ini under [Input Assist] > [BlinkWhenStuck] > BlinkKey. This is disabled by default, set toggle to "True" to turn on.
 2. [IMPORTANT] If you want to use chat-to-text recognition you must download and install tesseract from https://github.com/UB-Mannheim/tesseract/wiki
-	a.	Otherwise you must turn off ChatRecognitionOCR. You can do so in config.ini > Toggle Functions > ChatRecognitionOCR > False
+	a.	Otherwise you must turn off ChatRecognitionOCR. You can do so in config.ini > Toggle Functions > ChatRecognitionOCR > False (Default is "False")
 	b.	If ChatRecognitionOCR is turned off, an image of your chat window will be sent to discord instead
 3. [IMPORTANT] If you want to use damage skin recognition you must either
-	a.	Switch to Epic Lulz Kekeke (default damage skin configured) or
+	a.	Switch to Epic Lulz Kekeke (default damage skin configured) using Mini Basic Effect or
 	b.	Replace ds.png in img folder by taking a screenshot of your attacks and cropping a small section and saving over ds.png. Use the bundled ds.png as reference
 		i.	Damage skin and screenshot should be opaque
 		ii.	Use damage skins without numbers, preferable with repetitive patterns 
+
+
+============================Auto-Login Setup===========================
+1. Open usercredentials_examples.ini and fill in your credentials based on the usercredentials_examples
+2. All fields are case sensitive and must be exactly the same with no blank spaces etc.
+3. Once done, save and rename usercredentials_examples.ini to usercredentials.ini
+4. Remember to turn on the related settings in config.ini by setting Toggle to True (Default is false)
+5. If you want to use auto log-in yo must provide the 2FA Secret Key that comes with your authenticator. You can extract your 2FA key by following the below steps
+	a.	From Google authenticator, click hamburger menu (3 horizontal lines) > Transfer accounts > Export accounts
+	b.	Select the account related to your MSPassport and take a screenshot of the QR code and transfer to your PC
+	c.	Visit https://github.com/scito/extract_otp_secrets/releases/tag/v2.6.0 and download a release relevant to your Options
+		i.	You can opt to compile from source as this is fully open sourced for added security
+		ii.	If you are not sure where to download, I can also provide you the executable file on request
+	d.	Move the executable file to the same location as your screenshot with the QR code
+		i.	Win 10: Right-click the extract otp exe > Send To > Dektop (Create Shortcut)
+		ii. Win 11: Right-click the extract otp exe > Show More Options > Send To > Desktop (Create Shortcut)
+	e.	Navigate to Desktop, right click the newly created shortcut and click Properties
+	f.	In the Target section, move your cursor all the way to the right and type in the name of your screenshot file and formatafter a space
+		i. Example: C:\Users\YourPCName\Downloads\extract_otp_secrets_2.6.0_win_x86_64.exe test.jpg
+		ii.In this case my file was called test.jpg
+	g.	Run the shortcut, and once open, click and hold the window that opens until the 2FA key is displayed, this is to prevent the prompt from closing after completion
+	h.	Copy down Secret -> This is your 2FA Secret Key which you will add to usercredentials.ini
 
 
 ==========================Operating MSWatcher==========================
