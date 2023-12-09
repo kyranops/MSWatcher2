@@ -3,9 +3,7 @@ log.txt
 *.spec
 *.bat
 /*.ini
-/*.png
 build/
-img/
+/img/
+/*.png
 __pycache__/*
-img/minimapTest.png
-img/DEBUG*
