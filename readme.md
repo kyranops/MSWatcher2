@@ -14,16 +14,19 @@ MSWatcher2 **does not** perform any packet-sniffing or other actions that would 
 ***
 ## Event Detection
 MSWatcher2 monitors your screen constantly to alert your Discord. Some of the scans that are bundled by default include:
-- Hitting Air Detection (i.e. Attacking in a map with mobs disabled or in town)
-- All Chat messages or GM Chat messages
-- Violetta Test Appeared and Lie Detector Failed
-- Character not moving
-- Character is dead
-- Mushroom Buff Ended Detection
-- Rune Appeared on Map
-- Strangers/Guildmate/Friend on map Detection
-- Polo/Flamewolf Portal Detection
-- Especia Portal Detection (Totem Slash)
+- Critical Event Detection
+    - Hitting Air Detection (i.e. Attacking in a map with mob spawn disabled or bot running in town)
+    - All Chat messages or GM Chat messages
+    - Violetta Test Appeared
+    - Lie Detector Failed
+- QOL Event Detection
+    - Character not moving
+    - Character is dead
+    - Mushroom Buff Ended Detection
+    - Rune Appeared on Map
+    - Strangers/Guildmate/Friend on map Detection
+    - Polo/Flamewolf Portal Detection
+    - Especia Portal Detection (Totem Slash)
 
 *Event detection scans are fully extensible - ***You can add your own scans without knowing how to code***
 

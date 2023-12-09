@@ -90,7 +90,7 @@
 		iv. [Invert] deonates whether you want to scan for the presence or absence of the reference image. "False" = alert when detected, "True" = alert when NOT detected
 		v. [AlertMsg] is the alert text that will be sent to discord, which you can customise. No double quotes (") in text body. Any @ tags is also usable in discord, hence you can @everyone etc.
 4. [ADVANCED] The MSWatcher2 engine is able to handle additional scans as long as they follow the format of extendable scans. 
-	a.	Simply add the new target image into img folder and add another entry within the Extendable Scan section (1 dictionary per scan)
+	a. Simply add the new target image into img folder and add another entry within the Extendable Scan section (1 dictionary per scan)
 	b. Formatting must be exactly the same, please do not miss commas
 5. [ADVANCED] If you are facing issues with specific scans, you can replace the assets in the img folder by taking and cropping a new screenshot and saving to png format. 
 
@@ -102,6 +102,14 @@
 4. Discord may still sometimes block notifications, in such cases, add the @everyone tag in AlertMsg which will force discord to ping you
 5. Otherwise, your phone/smartwatch may also have delayed notifications for discord which you may need to check
 6. You can consider installing other discord specific bots to clean up your chat log periodically e.g. interpunct
+
+
+======================Notes on Violetta Detection======================
+1. Currently, lie detector detection is focused on the Violetta minigame lie detector
+2. MSWatcher2 currently does not support scanning for the floating bubble lie detector
+3. If you get the alert that lie detector failed, but without an alert of violetta appeared, most likely you received the floating bubble lie detector
+	a. Floating bubble lie detector is highly correlated with repetitive actions e.g. rune solver trying repeatedly, or using basic macros.
+	b. if this is happening very often consider getting a better bot
 
 
 ========================Updating MSWatcher=============================
@@ -116,6 +124,9 @@
 Q:	My discord notifications are late, sometimes by a few minutes
 A:	See "Notes on Discord" above
 
+Q:	I am getting the lie detector failed alert even though I did not get an alert for Violetta
+A:	See "Notes on Violetta" above
+
 Q:	Chat detection false positive or false negatives
 A:	Check chat.png and chatmask.png in the same folder as MSWatcher2.exe, is it capturing the correct area?
 	Please ensure that the chat window is docked to the bottom left most corner, right above "exp"
@@ -125,6 +136,7 @@ A:	Check chat.png and chatmask.png in the same folder as MSWatcher2.exe, is it c
 Q:	Chat detection text inaccurate
 A:	Chat detection relies on real OCR which means there may be slight variation in results from time to time
 	Chat detection is meant to help ascertain whether you should personally go check on your game and will not be 100% correct always
+	Consider turning chat detection off, and rely on the chat screenshot function instead
 
 Q:	The console is not showing an alert even though it is present on my game
 A:	Please ensure all UI element (e.g. Minimap, chat bar) are fully visible
