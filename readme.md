@@ -24,7 +24,8 @@ MSWatcher2 monitors your screen constantly to alert your Discord. Some of the sc
 - Strangers/Guildmate/Friend on map Detection
 - Polo/Flamewolf Portal Detection
 - Especia Portal Detection (Totem Slash)
-*This list is fully extensible - You can add your own scans without knowing how to code*
+
+*Event detection scans are fully extensible - ***You can add your own scans without knowing how to code***
 
 > <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> Discord Alert received when MSWatcher2 detects events, chat messages sent as picture
 ![discord alert example](https://github.com/kyranops/MSWatcher2/blob/main/assets/alertexample.png?raw=true)
@@ -33,11 +34,13 @@ Other scans that are currently in beta or planned for future development include
 - OCR text recognition to extract text from all chat or gm chat
 - Chat type differentiation to identify if it is party chat, buddy chat, guild chat etc
 - Current EXP percentage detection
+
 *New scans are constantly being developed if there is enough interest in a desired function*
 
 ***
 ## Input Assist
-MSWatcher2 monitors your screen constantly and performs actions when certain events occur. Some of the input assist functions that are bundled by default include:
+MSWatcher2 monitors your screen constantly and performs actions when certain events occur. This is particularly helpful when logging in remotely or from your phone.
+Some of the input assist functions that are bundled by default include:
 - Automatic Login from Title Screen (Including 2FA input, world/channel selection)
 - Automatic Secondary Password Input (Useful for accessing storage, Vmatrix, Cash shop gifting etc.)
 - Automatic Revive when Character is dead
@@ -46,11 +49,11 @@ MSWatcher2 monitors your screen constantly and performs actions when certain eve
 > <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> Auto-login and auto2fa demo
 ![autologin demo](https://github.com/kyranops/MSWatcher2/blob/main/assets/autologin_demo.gif?raw=true)
 
-
 Other functions that are currently in beta or planned for future development includes:
 - Automatic CC when certain conditions are met (e.g. number of people, time)
 - Automatic navigation to training map by Hyper Teleport Rock
 - Automatic relogin if game disconnects or Maple Crashes
+
 *New functions are constantly being developed if there is enough interest in a desired function*
 
 ***
@@ -59,7 +62,8 @@ All libraries and modules used by MSWatcher2 are fully packaged with the executa
 - There is no need to install C++, python, interception or any other programs
 - This means that it can be deployed to new environments (e.g. a new VM) without having to install multiple dependant software.
 - Everything that is needed will be included in the [dist](https://github.com/kyranops/MSWatcher2/tree/main/dist) folder and can be used plug-and-play style
-- *Exception: Tesseract.exe is needed if OCR is turned on. Default is Off*
+
+*Exception: Tesseract.exe is needed if OCR is turned on. Default is Off*
 
 ## Low Profile, Low Impact
 A key focus of MSWatcher2 is to minimize interaction with the game. This prevents any conflicts with other programs that may be running
@@ -72,17 +76,19 @@ Besides improving runtime, this means that scans can be **removed** or **added**
 - All alerts can be toggle on/off, and alert messages can be fully customized without having to code
 - New alerts can be added by the user without requiring coding knowledge, and can be added straight into the config.ini file, no recompilation needed
 - Alerts can be integrated with other native Discord functions, including @everyone pings or other discord bots to manage alert logs
+
 *Full instructions provided in [readme.txt](https://github.com/kyranops/MSWatcher2/blob/main/dist/readme.txt)*
 
 ## Lifetime Upgrades and Improvements
-MSWatcher2 started out as a passion project and I am constantly working on it to make it better and more efficient. 
-- New functions are always being added and existing functions are enhanced for reliability Updating is also a simple process, as MSWatcher2 is fully backwards compatible.
-- Improvements to existing functionalities of MSWatcher2 will be free and remain free
+MSWatcher2 is my personal passion project and I am constantly working on it to make it better and more efficient. 
+- **Ongoing Development**: New functions are always being added and existing functions are enhanced for reliability Updating is also a simple process, as MSWatcher2 is fully backwards compatible.
+- **Free Updates Forever**: Updates to existing functionalities of MSWatcher2 will be free and remain free
 - The newest version will always be provided in the [dist](https://github.com/kyranops/MSWatcher2/tree/main/dist) folder. Simply drag-and-drop the new MSWatcher2.exe (and config.ini if specified)
 
 ***
 ## Getting Started
 This project is closed source. Please reach out to me on [Discord](https://discordapp.com/users/157035482650378241) if you are interested.
+
 A full guide on how to get set-up and configure MSWatcher2 is available in the readme.txt
 
 ***
