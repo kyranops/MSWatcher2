@@ -62,13 +62,18 @@ All libraries and modules used by MSWatcher2 are fully packaged with the executa
 - Everything that is needed will be included in the [dist](https://github.com/kyranops/MSWatcher2/tree/main/dist) folder and can be used plug-and-play style
 - *Exception: Tesseract.exe is needed if OCR is turned on. Default is Off*
 
+## Low Profile, Low Impact
+A key focus of MSWatcher2 is to minimize interaction with the game. This prevents any conflicts with other programs that may be running
+- Will not interfere with any bot or macro that is currently running as input assist only runs in town
+- Will not interfere with any existing rune solver or similar programs
+
 ## Designed for Customizability
 The main codebase of MSWatcher2 is dynamic, every time it is started it will parse the contents in config.ini to generate the scan table.
 Besides improving runtime, this means that scans can be **removed** or **added** without having to modify the codebase
 - All alerts can be toggle on/off, and alert messages can be fully customized without having to code
 - New alerts can be added by the user without requiring coding knowledge, and can be added straight into the config.ini file, no recompilation needed
 - Alerts can be integrated with other native Discord functions, including @everyone pings or other discord bots to manage alert logs
-*Full instructions provided in readme.txt*
+*Full instructions provided in [readme.txt](https://github.com/kyranops/MSWatcher2/blob/main/dist/readme.txt)*
 
 ## Lifetime Upgrades and Improvements
 MSWatcher2 started out as a passion project and I am constantly working on it to make it better and more efficient. 
