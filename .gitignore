@@ -7,3 +7,6 @@ build/
 /img/
 /*.png
 __pycache__/*
+/.vscode
+/dist/*.png
+/dist/usercredentials.ini
