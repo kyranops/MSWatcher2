@@ -15,7 +15,7 @@ MSWatcher2 **does not** perform any packet-sniffing or other actions that would 
 ## Event Detection
 MSWatcher2 monitors your screen constantly to alert your Discord. Some of the scans that are bundled by default include:
 - Critical Event Detection
-    - Hitting Air Detection (i.e. Attacking in a map with mob spawn disabled or bot running in town)
+    - Hitting Air Detection (i.e. Attacking in a map with mob spawn disabled or overcrowded map)
     - All Chat messages or GM Chat messages
     - Violetta Test Appeared
     - Lie Detector Failed
@@ -28,7 +28,7 @@ MSWatcher2 monitors your screen constantly to alert your Discord. Some of the sc
     - Polo/Flamewolf Portal Detection
     - Especia Portal Detection (Totem Slash)
 
-*Event detection scans are fully extensible - ***You can add your own scans without knowing how to code***
+*Event detection scans are fully extensible* - ***You can add your own scans without knowing how to code***
 
 > <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> Discord Alert received when MSWatcher2 detects events, chat messages sent as picture
 ![discord alert example](https://github.com/kyranops/MSWatcher2/blob/main/assets/alertexample.png?raw=true)
@@ -63,10 +63,10 @@ Other functions that are currently in beta or planned for future development inc
 ## Fully Self-contained
 All libraries and modules used by MSWatcher2 are fully packaged with the executable.
 - There is no need to install C++, python, interception or any other programs
-- This means that it can be deployed to new environments (e.g. a new VM) without having to install multiple dependant software.
+- This means that it can be deployed to new environments (e.g. a new VM) without having to install multiple prerequisite software.
 - Everything that is needed will be included in the [dist](https://github.com/kyranops/MSWatcher2/tree/main/dist) folder and can be used plug-and-play style
 
-*Exception: Tesseract.exe is needed if OCR is turned on. Default is Off*
+*Exception: Tesseract.exe is needed if OCR is turned on. Default is off*
 
 ## Low Profile, Low Impact
 A key focus of MSWatcher2 is to minimize interaction with the game. This prevents any conflicts with other programs that may be running
@@ -74,8 +74,7 @@ A key focus of MSWatcher2 is to minimize interaction with the game. This prevent
 - Will not interfere with any existing rune solver or similar programs
 
 ## Designed for Customizability
-The main codebase of MSWatcher2 is dynamic, every time it is started it will parse the contents in config.ini to generate the scan table.
-Besides improving runtime, this means that scans can be **removed** or **added** without having to modify the codebase
+The main codebase of MSWatcher2 is dynamic, every time it is started it will parse the contents in config.ini to generate the scan table.Besides improving runtime, this means that scans can be **removed** or **added** without having to modify the codebase
 - All alerts can be toggle on/off, and alert messages can be fully customized without having to code
 - New alerts can be added by the user without requiring coding knowledge, and can be added straight into the config.ini file, no recompilation needed
 - Alerts can be integrated with other native Discord functions, including @everyone pings or other discord bots to manage alert logs
