@@ -1,9 +1,9 @@
 log.txt
 *.py
 *.spec
-*.ini
 *.bat
-*.png
+/*.ini
+/*.png
 build/
 img/
 __pycache__/*
