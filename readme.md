@@ -9,7 +9,7 @@ MSWatcher2 is a monitoring utility for MapleStory that aims to reduce human effo
 
 MSWatcher2 **does not** perform any packet-sniffing or other actions that would constitute as hacking, and it **is not** a macro utility and **will not** help you farm.
 > <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> MSWatcher2 simply watches for you, so you don't have to. 
-
+![demo](https://github.com/kyranops/MSWatcher2/blob/main/assets/demo.gif?raw=true)
 
 ***
 ## Event Detection
@@ -49,7 +49,7 @@ Some of the input assist functions that are bundled by default include:
 - Automatic Revive when Character is dead
 - Automatic Blink when Character is stuck
 
-> <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> Auto-login and auto2fa demo
+> <img src="https://github.com/kyranops/MSWatcher2/blob/main/assets/icon.png?raw=true" alt="icon" width="15"/> Auto-login and Auto 2ndPassword demo
 ![autologin demo](https://github.com/kyranops/MSWatcher2/blob/main/assets/autologin_demo.gif?raw=true)
 
 Other functions that are currently in beta or planned for future development includes:
@@ -86,12 +86,12 @@ MSWatcher2 is my personal passion project and I am constantly working on it to m
 - **Ongoing Development**: New functions are always being added and existing functions are enhanced for reliability Updating is also a simple process, as MSWatcher2 is fully backwards compatible.
 - **Free Updates Forever**: Updates to existing functionalities of MSWatcher2 will be free and remain free
 - The newest version will always be provided in the [dist](https://github.com/kyranops/MSWatcher2/tree/main/dist) folder. Simply drag-and-drop the new MSWatcher2.exe (and config.ini if specified)
+- Noticed a bug? Let me know and **I will fix it**.
 
 ***
 ## Getting Started
 This project is closed source. Please reach out to me on [Discord](https://discordapp.com/users/157035482650378241) if you are interested.
-
-A full guide on how to get set-up and configure MSWatcher2 is available in the readme.txt
+For existing users, a full guide on how to get set-up and configure MSWatcher2 is available in the readme.txt
 
 ***
 ## Changelog
